@@ -98,6 +98,8 @@ a{
     font-weight: 500;
     line-height: 20px;
     text-align: center;
+    color: white;
+    background-color: var(--primary);
 }
 
 :root{
@@ -107,6 +109,7 @@ a{
     --black: #121723;
     --light-black:#292E39;
     --ad-color:#F0D288;
+    --primary: #6D31EE;
 }
 
 .section-title{
@@ -119,7 +122,7 @@ a{
 .header{
     display: flex;
     padding-top: 34px;
-    padding-bottom: 34px;
+    padding-bottom: 32px;
 }
 
 .header__nav{
@@ -144,7 +147,10 @@ a{
 }
 
 .header__serch-button{
-    padding: 4px;
+    margin-top: -1px;
+    padding: 0;
+    background: none;
+    border: none;
 }
 
 /* hero */
@@ -165,11 +171,13 @@ a{
 .hero__title{
     margin-bottom: 14px;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 100%;
     text-align: left;
 }
-
+.hero__title i{
+    font-weight: 400;
+}
 .hero__descr{
     margin-bottom: 45px;
     font-size: 16px;
@@ -281,17 +289,26 @@ a{
 }
 
 .broadcast{
-    padding: 94px 0 62px 0;
+    
+    padding: 94px 0 95px 0;
+}
+
+.broadcast__container{
+    position: relative;
+}
+
+.broadcast__achiv{
+    display: flex;
+
 }
 
 /* .broadcst__achiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    
 } */
 
 .broadcast__list{
     display: flex;
+    margin-bottom: -30px;
     padding-top: 14px;
 }
 
@@ -301,9 +318,21 @@ a{
     line-height: 150%;
     color: var(--text-gray);
 }
+
+.broadcast__button-box{
+    position: absolute;
+    max-width: 255px;
+    padding-top: 200px;
+    bottom: 3px;
+    left: 15px;
+    background-position: 0 88px;
+    background-repeat: no-repeat;
+    background-image: url(../img/mic.png);
+}
+
 .broadcast__button{
     margin-bottom: 12px;
-    padding: 12px 56px;
+    padding: 9px 54px;
     border: 2px solid var(--black);
     font-size: 16px;
     font-weight: 500;
@@ -337,15 +366,20 @@ a{
 }
 
 .broadcast__link{
+    padding-right: 27px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow.svg);
+}
+.broadcast__item{
+    margin-bottom: 30px;
 }
 
-
 .broadcast__item-bg{
-    margin-bottom: 30px;
-    padding-top: 148px;
+    height: 147px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -371,9 +405,9 @@ a{
 }
 
 
-.broadcast__title{
+/* .broadcast__title{
     margin-bottom: 416px;
-}
+} */
 
 /* guests */
 
@@ -515,6 +549,11 @@ a{
     background-color: var(--light-black);
 }
 
+.ad__img-box{
+    position: relative;
+    
+}
+
 .ad__img{
     padding-top: 8px;
     margin-left: -5px;
@@ -522,16 +561,26 @@ a{
     max-height: 570px;
 }
 
+.new{
+    position: absolute;
+    left: 10px;
+}
+
 .ad__title{
     margin-bottom: 19px;
+    padding-bottom: 29px;
     font-size: 48px;
     font-weight: 400;
     line-height: 100%;
     color: var(--ad-color);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(../img/ad-vector.svg);
 }
 
 .ad__vector{
     margin-bottom: 13px;
+    overflow-x: c;
 }
 
 .ad__descr{
@@ -559,6 +608,9 @@ a{
     border: 2px solid var(--ad-color);
     color: var(--ad-color);
     background: none;
+    background-repeat: no-repeat;
+    background-position: 11px 23px;
+    background-image: url(../img/ym-logo.svg);
 }
 
 /* about */
@@ -567,6 +619,13 @@ a{
     padding: 94px 0;
     background-color: var(--black);
     color: var(--text-gray);
+}
+
+
+.about__row{
+    background-position: 679px 0;
+    background-repeat: no-repeat;
+    background-image: url(../img/ab.svg);
 }
 
 .about__title{
@@ -625,6 +684,10 @@ a{
     max-height: 150px;
     border: 1px solid white;
     border-radius: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-gray);
     background: none;
 }
 
@@ -634,11 +697,22 @@ a{
     padding: 10px 10px 10px 32px;
     border: 1px solid white;
     border-radius: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-gray);
     background: none;
 }
 
+.form__textarea::placeholder, .form__input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-gray);
+}
+
 .inputs{
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .input-name{
@@ -647,32 +721,100 @@ a{
 
 .form__button{
     align-self: start;  
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
+
+/* .form__checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+
+.checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+.checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid white;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
 
 .form__checkbox-text{
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
 }
-
+/* footer */
 .footer{
-    padding: 94px 0;
+    padding: 94px 0 10px 0;
     background-color: var(--light-black);
 }
 
 .footer__container{
     display: flex;
     justify-content: space-between;
+    padding-right: 5px;
+    margin-bottom: 72px;
+}
+
+.footer__left{
+    margin-right: auto;
 }
 
 .footer__logo{
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+}
+
+/* .footer__list{
+    min-width: 455px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+} */
+.footer__nav{
+    padding-right: 10px;
 }
 
 .footer__list{
-    max-width: 455px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 445px;
+    height: 108px;
+    justify-content: space-between;
 }
+
+/* .footer__list p{
+    margin: 0;
+    padding: 0;
+} */
+  
+.footer__item{
+display: inline;
+margin-right: 109px;
+margin-bottom: 15px;
+}
+
+
+
 
 .footer__link{
     padding: 11px;
@@ -695,10 +837,25 @@ a{
     background-image: url(../img/ok.svg);
 }
 
+.footer__item{
+    margin-bottom: 20px;
+}
 
 .footer__item-link{
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     color: white;
+}
+
+.footer__descr{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 103.34%;
+    color: var(--text-gray);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../img/ft-vec.svg);
 }
