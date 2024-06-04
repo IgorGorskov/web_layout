@@ -40,9 +40,10 @@
 }
 
 .header__list{
+    margin: 0 -9px;
     width: 100%;
     justify-content: space-between;
-    gap: normal;
+    gap: 85px;
 }
 
 .header__serch-button{
@@ -81,6 +82,7 @@
 }
 
 /* broadcast */
+.broadcast{padding: 95px 0;}
 
 .broadcast__button-box{
 
@@ -88,6 +90,9 @@
     left: 100px;
     background-position: 0 88px;
 
+}
+.broadcast__link{
+    margin-left: -2px;
 }
 
 .broadcast__list{
@@ -310,6 +315,7 @@
 }
 
 .ad__title{
+    padding-right: 70px;
     background-image: url(../img/ad-1024.svg);
 }
 
@@ -334,7 +340,7 @@
     margin-bottom: 30px;
 }
 
-.form__input {
+.about__input {
     width: 100%;
 }
 /* footer */
@@ -346,27 +352,29 @@
 
 .footer__left{
     margin-right: 0;
-    margin-bottom: 88px;
+    margin-bottom: 74px;
 }
 
 .footer__logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     
 }
 
 .linkbox{
-    text-align: center;
+    justify-content: center;
 }
 
-.footer__link{
-    padding: 15px;
+.footer__link svg{
+    width: 32px;
+    height: 32px;
 }
 
-.youtube-link{
-    margin-right: 26px;
+.youtube-link svg{
+    width: 36;
+    height: 36;
 }
 
 .ok-link{
@@ -393,7 +401,7 @@
 
 @media (max-width: 776px) {
     .footer__item {
-        margin-right: 86px;
+        margin-right: 151px;
     }
 
 }
@@ -438,7 +446,7 @@
 
 
 .footer__item {
-    margin-right: 78px;
+    margin-right: 73px;
     margin-bottom: 24px;
 }
 }
@@ -464,7 +472,7 @@
 }
 
 .header__list{
-    gap: 32px;
+    gap: 4px;
 }
 
 .section-title{
@@ -742,6 +750,7 @@
 
 .ad__title{
     margin-bottom: 10px;
+    padding-right: 0;
     background-position: 0px 58px;
 }
 .ad__descr{
@@ -762,7 +771,7 @@
 
 
 .ad__button{
-    padding: 15px 16px 15px 39px;
+    padding: 12px 13px 14px 14px;
     font-size: 16px;
     line-height: 100%;
     background-position: 14px 12px;
@@ -807,17 +816,17 @@
     margin-bottom: 32px;
 }
 
-.form__textarea{
+.about__textarea{
     padding: 17px 10px 10px 24px;
     border-radius: 20px;
 }
 
-.form__textarea::placeholder, .form__input::placeholder{
+.about__textarea::placeholder, .about__input::placeholder{
     font-size: 16px;
     line-height: 16px;
 }
 
-.form__input {
+.about__input {
     height: 51px;
     padding: 10px 10px 10px 24px;
 }
@@ -826,14 +835,14 @@
     margin-bottom: 29px;
 }
 
-.form__button {
+.about__button {
     margin-bottom: 19px;
     padding: 17px 44px;
     font-size: 16px;
     line-height: 16px;
 }
 
-.form__checkbox-text{
+.checkbox-text{
     font-size: 9px;
     line-height: 9px;
 }
@@ -849,10 +858,15 @@
     padding: 53px 0 10px 0;
 }
 
+
+
 .footer__left{
-    margin-bottom: 90px;
+    margin-bottom: 78px;
 }
 
+.footer__logo{
+    margin-bottom: 22px;
+}
 
 .footer__item-link{
     font-size: 12px;
