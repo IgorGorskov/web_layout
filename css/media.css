@@ -72,6 +72,7 @@
 }
 
 .hero__descr{
+    max-width: 66%;
     margin-bottom: 23px;
 }
 
@@ -86,7 +87,7 @@
 }
 
 .podcast__item{
-    
+    width: 48%;
 }
 
 .podcast__content{
@@ -94,21 +95,26 @@
 }
 
 /* broadcast */
-.broadcast{padding: 95px 0;}
+.broadcast{
+    padding: 95px 0 126px;
+}
 
 .broadcast__button-box{
-
-    bottom: 3px;
+    bottom: -1px;
     left: 100px;
     background-position: 0 88px;
+}
 
+.broadcast__item{
+    flex: 1 1 calc(50% - 15px);
 }
 .broadcast__link{
     margin-left: -2px;
 }
 
 .broadcast__list{
-    padding-top: 15px;
+    align-items: stretch;
+    width: 65.5%;
 }
 
 .broadcast__item-bg{
@@ -116,6 +122,14 @@
 }
 
 /* guests */
+
+.guests{
+    padding: 94px 0 44px 0;
+}
+
+.guests__descr{
+    max-width: 70%;
+}
 
 .guests__item{
     margin-left: 0;
@@ -125,14 +139,24 @@
 /* playlist */
 
 .playlists {
-    padding: 94px 0 66px 0;
+    padding: 94px 0 97px 0;
+}
+
+.playlists__top{
+    margin-bottom: 25px;
+}
+
+.playlists__descr{
+    width: 100%;
 }
 
 .playlists__list{
-    padding-top: 23px;
+    max-width: 100%;
+    margin-top: 0;
 }
 
 .playlists__item{
+    width: 30.9%;
     display: flex;
 }
 
@@ -148,7 +172,7 @@
 
 .flag{
     right: auto;
-    left: 15px;
+    left: 0;
 }
 
 /* ad */
@@ -163,6 +187,7 @@
 }
 
 .ad__content{
+    max-width: 47%;
     margin-left: -3px;
 }
 
@@ -178,22 +203,30 @@
 /* about */
 
 .about__decsr {
-    margin-bottom: 28px;
+    max-width: 65%;
+    margin-bottom: 31px;
 }
 
-.about__row{
-    background-position: 583px 47px;
+.about__p{
+    max-width: 66%;
+}
+
+.about__top{
+    background-position: 569px 50px;
     background-image: url(../img/ab-1400.svg);
 }
 
 .about__list{
-    margin-bottom: -3px;
+    margin-bottom: 29px;
 }
 
 .about__item{
-    margin-bottom: 30px;
+    width: 48.2%;
 }
 
+.about__form{
+    max-width: 100%;
+}
 
 .input-name{
     margin-right: 22px;
@@ -209,10 +242,16 @@
     margin-bottom: 75px;
 }
 
+.footer__logo{
+    margin-bottom: 16px;
+}
 .footer__nav{
     padding-right: 0;
 }
 
+.footer__item{
+    margin-right: 104px;
+}
 
 
 .footer__descr{
@@ -233,6 +272,10 @@
     gap: 34px;
 }
 
+.hero__descr {
+    max-width: 100%;
+}
+
 .header__item{
     font-size: 16px;
     line-height: 16px;
@@ -245,18 +288,32 @@
     background: none;
 }
 
+.podcast__item {
+    width: 100%;
+}
+
+.podcast__list{
+    gap: 30px;
+}
+
 /* broadcast  */
 
 .broadcast{
     position: relative;
-    padding-bottom: 216px;
+    padding-bottom: 249px;
+}
+
+.broadcast__list{
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
 }
 
 .broadcast__button-box{
     max-width: 355px;
     top: auto;
     bottom: -188px;
-    left: 201px;
+    left: 26.4%;
     padding-top: 0;
     padding-left: 100px;
     background-position: 10px 0;
@@ -273,10 +330,14 @@
 }
 
 .broadcast__title{
-    margin-bottom: 109px;
+    margin-bottom: 126px;
 }
 
 /* guests */
+
+.guests__descr {
+    max-width: 100%;
+}
 
 .guests__item{
     display: flex;
@@ -299,18 +360,31 @@
 
 /* playlists  */
 
+.playlists__top {
+    margin-bottom: -1px;
+}
+
 .playlists{
-    padding-bottom: 82px;
+    padding-bottom: 112px;
 }
 
 .playlists__list {
     padding-top: 26px;
+    gap: 30px
+}
+
+.playlists__item {
+    flex: 1 1 calc(50% - 15px);
 }
 
 /* ad  */
 
 .ad{
     padding-top: 45px;
+}
+
+.ad__container {
+    flex-direction: column;
 }
 
 .ad__img{
@@ -327,6 +401,10 @@
     visibility: hidden;
 }
 
+.ad__content {
+    max-width: 100%;
+}
+
 .ad__title{
     padding-right: 70px;
     background-image: url(../img/ad-1024.svg);
@@ -334,18 +412,29 @@
 
 /* about  */
 
+
+.about__p {
+    max-width: 100%;
+}
+
 .about__decsr{
+    max-width: 100%;
     margin-bottom: 30px;
     padding-bottom: 141px;
 }
 
-.about__row {
-    background-position: -99px 380px;
+.about__top {
+    background-position: -113px 380px;
     background-image: url(../img/ab-1024.svg);
 }
 
 .ad__content {
     margin-left: 0;
+}
+
+
+.about__item {
+    width: 47.3%;
 }
 
 .input-name{
@@ -360,19 +449,19 @@
 
 .footer__container{
     flex-direction: column;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
 }
 
 .footer__left{
     margin-right: 0;
-    margin-bottom: 74px;
+    margin-bottom: 76px;
 }
 
 .footer__logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     
 }
 
@@ -536,7 +625,7 @@
 /* podecast */
 
 .podcast{
-    padding-bottom: 24px;
+    padding-bottom: 54px;
 }
 
 .podcast__title{
@@ -592,7 +681,7 @@
 /* brodcast  */
 
 .broadcast{
-
+    padding-bottom: 73px;
 }
 
 .broadcast__list{
@@ -622,7 +711,8 @@
     line-height: 9px;   
 }
 
-.broadcast__item{
+.broadcast__item {
+    width: 44.3%;
     display: flex;
     flex-direction: column;
     height: 149px;
@@ -635,6 +725,11 @@
     height: auto;
     padding: 10px 8px 12px 10px;
 }
+
+.broadcast__item-bg {
+    background-size: 100% 55px;
+}
+
 
 .broadcast__link{
     bottom: 0;
@@ -714,7 +809,7 @@
 }
 
 .playlists{
-    padding-bottom: 24px;
+    padding-bottom: 55px;
 }
 
 .playlists__descr{
@@ -727,10 +822,10 @@
     margin-bottom: 5px;
 }
 
-.playlists__item{
+.playlists__item {
+    width: 44.1%;
     display: flex;
     flex-direction: column;
-
 }
 
 .playlists__item-content{
@@ -749,13 +844,13 @@
 
 .flag{
     left: auto;
-    right: 15px;
+    right: 0;
 }
 
 /* ad  */
 
-.ad__img{
-    
+.ad__img-box{
+    margin-right: 0;
 }
 
 .ad{
@@ -803,7 +898,7 @@
 /* about  */
 
 .about {
-    padding: 55px 0;
+    padding: 55px 0 53px;
 }
 
 .about__p{
@@ -836,7 +931,7 @@
 }
 
 .about__item {
-    margin-bottom: 32px;
+    width: 44.3%;
 }
 
 .about__textarea{
@@ -859,7 +954,7 @@
 }
 
 .about__button {
-    margin-bottom: 19px;
+    margin-bottom: 23px;
     padding: 17px 44px;
     font-size: 16px;
     line-height: 16px;
@@ -886,7 +981,7 @@
 
 
 .footer__left{
-    margin-bottom: 78px;
+    margin-bottom: 81px;
 }
 
 .footer__logo{

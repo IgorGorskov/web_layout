@@ -96,7 +96,7 @@ a{
 }
 
 .container{
-    max-width: 1140px;
+    max-width: 1112px;
     margin: 0 auto;
 }
 
@@ -233,7 +233,7 @@ a{
     padding-bottom: 94px;
     background-repeat: no-repeat;
     background-size: 350px 372px;
-    background-position: 772px 32px;
+    background-position: 760px 32px;
     background-image: url(../img/microphone.jpg);
 }
 
@@ -252,6 +252,7 @@ a{
     font-weight: 400;
 }
 .hero__descr{
+    max-width: 55%;
     margin-bottom: 45px;
     font-size: 16px;
     font-weight: 400;
@@ -264,21 +265,23 @@ a{
 
 .podcast{
     padding-top: 97px;
-    padding-bottom: 63px;
+    padding-bottom: 91px;
     background-color: var(--light-color);
 }
 
 .podcast__title{
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .podcast__list{
     display: flex;
-    margin: 0 -15px 0 -15px;
-    /* gap: 30px; */
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 31px;
 }
 
 .podcast__item{
+    width: 48.6%;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -286,7 +289,6 @@ a{
 
 .podcast__content{
     position: relative;
-    margin-bottom: 30px;
     padding: 40px 222px 40px 142px;
     background-color: white;
     background-position: left;
@@ -362,25 +364,29 @@ a{
 }
 
 .broadcast{    
-    padding: 94px 0 95px 0;
+    padding: 95px 0 126px 0;
 }
 
 .broadcast__container{
     position: relative;
 }
 
-.broadcast__achiv{
-    display: flex;
+.broadcast__title{
+    width: 75%;
 }
 
-/* .broadcst__achiv{
-    
-} */
-
 .broadcast__list{
+    width: 74.3%;
     display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: -34px;
     margin-bottom: -30px;
-    padding-top: 14px;
+    gap: 28.4px;
+}
+
+.broadcast__item{
+    width: 31%;
 }
 
 .broadcast__descr{
@@ -394,8 +400,8 @@ a{
     position: absolute;
     max-width: 255px;
     padding-top: 200px;
-    bottom: 3px;
-    left: 15px;
+    bottom: 0px;
+    left: 2px;
     background-position: 0 88px;
     background-repeat: no-repeat;
     background-image: url(../img/mic.png);
@@ -481,9 +487,7 @@ a{
 .broadcast__link:focus i svg path{
     fill: white;
 }
-.broadcast__item{
-    margin-bottom: 30px;
-}
+
 
 .broadcast__item-bg{
     height: 147px;
@@ -512,9 +516,7 @@ a{
 }
 
 
-/* .broadcast__title{
-    margin-bottom: 416px;
-} */
+
 
 /* guests */
 
@@ -529,6 +531,7 @@ a{
 }
 
 .guests__descr{
+    max-width: 75%;
     font-size: 20px;
     font-weight: 400;
     line-height: 160%;
@@ -555,7 +558,6 @@ a{
 .guests__item{
     display: flex;
     margin-bottom: 50px;
-    margin-left: -15px;
 }
 
 .guests__subtitle{
@@ -615,7 +617,7 @@ a{
 /* playlists */
 
 .playlists{
-    padding: 94px 0 63px 0;
+    padding: 94px 0 96px 0;
 }
 
 .playlists__title{
@@ -623,6 +625,7 @@ a{
 }
 
 .playlists__descr{
+    width: 30%;
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: 400;
@@ -631,12 +634,17 @@ a{
 }
 
 .playlists__list{
-    padding-top: 15px;
+    display: flex;
+    max-width: 65.7%;
+    margin-top: -174px;
+    margin-left: auto;
+    gap: 29px;
+    flex-wrap: wrap;
 }
 
 .playlists__item{
+    width: 22%;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .playlists__item-content{
@@ -661,7 +669,7 @@ a{
 
 .flag{
     position: absolute;
-    right: 15px;
+    right: 0;
     top: 0;
 }
 
@@ -672,9 +680,13 @@ a{
     background-color: var(--light-black);
 }
 
+.ad__container{
+    display: flex;
+}
+
 .ad__img-box{
     position: relative;
-    
+    margin-right: 30px;
 }
 
 .ad__img{
@@ -686,7 +698,11 @@ a{
 
 .new{
     position: absolute;
-    left: 10px;
+    left: -4px;
+}
+
+.ad__content{
+    max-width: 40%;
 }
 
 .ad__title{
@@ -792,8 +808,8 @@ a{
 }
 
 
-.about__row{
-    background-position: 679px 0;
+.about__top{
+    background-position: 666px 0;
     background-repeat: no-repeat;
     background-image: url(../img/ab.svg);
 }
@@ -811,6 +827,7 @@ a{
 }
 
 .about__decsr{
+    max-width: 60%;
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 400;
@@ -818,9 +835,14 @@ a{
 }
 
 .about__list{
-    margin-right: -15px;
-    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
+    gap: 29px;
+}
+
+.about__item{
+    width: 23%;
 }
 
 .about__subtitle{
@@ -845,6 +867,7 @@ a{
 .about__form{
     display: flex;
     flex-direction: column;
+    max-width: 83%;
 }
 
 .about__textarea{
@@ -925,7 +948,7 @@ input[type="email"]:invalid + .error-message {
 
 .about__button{
     align-self: start;  
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 }
 
 .checkbox-container{
@@ -978,7 +1001,7 @@ input[type="email"]:invalid + .error-message {
     display: flex;
     justify-content: space-between;
     padding-right: 5px;
-    margin-bottom: 77px;
+    margin-bottom: 73px;
 }
 
 .footer__left{
@@ -996,7 +1019,7 @@ input[type="email"]:invalid + .error-message {
     padding-right: 10px;
 } */
 .footer__nav{
-    padding-right: 10px;
+
 }
 
 .footer__list{
@@ -1015,7 +1038,7 @@ input[type="email"]:invalid + .error-message {
   
 .footer__item{
     display: inline;
-    margin-right: 104px;
+    margin-right: 107px;
     margin-bottom: 15px;
 }
 .linkbox{
